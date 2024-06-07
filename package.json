@@ -1,0 +1,19 @@
+{
+  "name": "pinpark",
+  "version": "1.0.0",
+  "description": "[MarkdownGuide](https://www.markdownguide.org/cheat-sheet/)\r [NikolaPosa](https://www.nikolaposa.in.rs/blog/2017/01/16/on-structuring-php-projects/)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}

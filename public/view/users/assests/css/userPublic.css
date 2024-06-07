@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+main.background {
+  background-image: url("/../Pinpark/public/view/users/assests/img/h3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.lugu {
+  padding-left: 20px;
+}
+
+.burger-icon {
+  font-size: 40px;
+  color: #fca311;
+  cursor: pointer;
+  padding: 20px;
+  float: right;
+}
+
+.sidemenu {
+  display: none;
+  position: fixed;
+  top: 0.0000000001px;
+  right: 0;
+  width: 25%;
+  height: 100%;
+  z-index: 1;
+  transition: right 0.5s;
+  background-color: #070605;
+  opacity: 90%;
+  flex: 30%;
+  padding: 20px;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+.sidemenu img {
+  display: block;
+  width: 10px;
+  height: auto;
+  flex: 30%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+a.right {
+  padding-bottom: 20px;
+}
+
+.sidemenu a {
+  display: block;
+  color: white;
+  font-size: 20px;
+  padding: 20px 16px;
+  text-decoration: none;
+}
+
+/*--------navbar------------*/
+
+.container {
+  width: auto;
+  margin: 30px;
+  padding: 30px;
+  border: none;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+}
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ffa600;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffee00;
+}
+
+#start_date {
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+}
+
+#start_date {
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+}
+
+#end_date {
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+}
+
+#start_time {
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  width: 75px;
+}
+
+#end_time {
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  width: 75px;
+}
+
+.container h2 {
+  color: rgb(255, 187, 0);
+  font-size: 40px;
+}
+
+div#left-content {
+  border: none;
+}
+
+label {
+  font-weight: lighter;
+  color: white;
+}
+
+div.container_right {
+  width: 40%;
+  float: right;
+  margin: 30px;
+  padding: 30px;
+  margin-top: 94px;
+}
+
+.container_right p {
+  color: #ffffff;
+  width: auto;
+  align-items: end;
+}
+
+.pin {
+  font-size: 50px;
+}
+
+.container_right img {
+  height: 80px;
+  /* width: 15rem; */
+}

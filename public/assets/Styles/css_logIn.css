@@ -1,0 +1,197 @@
+/*
+* Bachelor of Science in Information Technology
+* Parking Management System
+* 
+* [Pinpark] : Designed and Developed by 2nd yr Collage of BSIT-2128 students in Bestlink college of the Philippines. 
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai+Looped:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* *,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+} */
+
+:root {
+  --cs-font-text-family: "Work Sans", sans-serif;
+  --cs-font-header-family: "Noto Sans Thai Looped", sans-serif;
+  --cs-primary-color: #ffc700;
+  --cs-secondary-color: #fca311;
+  --cs-primary-bg-color: #f1f6f9;
+  --cs-secondary-bg-color: #9ba4b4;
+  --cs-tertiary-bg-color: #383838;
+  --cs-base-color: #000000;
+  --cs-header-fontsize: 3.313rem;
+}
+
+#login-pg {
+  background-image: url(../Images/parking_lots.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+#login-pg:before {
+  background-color: rgba(0, 0, 0, 0.6);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#login-logo img {
+  width: 14rem;
+  height: 4rem;
+  /* filter: drop-shadow(0.063rem 0.031rem 0.063rem var(--cs-secondary-bg-color)); */
+}
+/* 
+#back-home:hover {
+  color: aqua;
+} */
+
+#login-ctnt {
+  background-color: var(--cs-primary-bg-color);
+}
+
+/* #login-ctr {
+  height: 100vh;
+} */
+
+.login-form > .inputBox {
+  position: relative;
+  width: 100%;
+}
+
+.inputBox > .login-input {
+  width: 100%;
+  padding: 0.5rem;
+  /* border: 0 0 0.094rem 0 solid var(--cs-tertiary-bg-color);
+  border: 0 0 0.075rem 0; */
+  border: 0.094rem solid var(--cs-tertiary-bg-color);
+  border-radius: 0.313rem;
+  outline: none;
+  font-size: 1rem;
+  color: var(--cs-base-color);
+  background-color: var(--cs-primary-bg-color);
+}
+
+/* .inputBox > .label {
+  position: absolute;
+  left: 0.2rem;
+  top: 0.2rem;
+  padding: 0.719rem;
+  pointer-events: none;
+  color: #9ba4b4;
+  font-size: 1rem;
+  transition: 0.2s ease-out;
+  background-color: var(--cs-primary-bg-color);
+  height: 1rem;
+}
+
+.inputBox > .login-input:valid ~ .label,
+.inputBox > .login-input:focus ~ .label {
+  color: var(--cs-base-color);
+  transform: translateX(0.563rem) translateY(-1.5rem);
+  font-size: 0.844rem;
+  display: inline-block !important;
+  letter-spacing: 0.125em;
+} */
+
+/* .inputBox:not() */
+
+/* 
+  ! TODO : FIX The behaviour of Alter placeholder in Email input
+  ! TODO : Provide background in your eye span 
+*/
+
+.inputBox > .eye {
+  position: absolute;
+  /* left: 0; */
+  /* top: 1rem; */
+  right: 0.156rem;
+  top: 0.125rem;
+  padding: 0.5rem;
+  /* cursor: pointer; */
+  /* width: 20%; */
+  /* background: none; */
+  /* background-color: #f1f6f9; */
+  /* background: #f1f6f9; */
+}
+
+/* .eye > #hide-1,
+.eye > #hide-2 {
+  width: 100%;
+} */
+
+.eye > #hide-1,
+.eye > #hide-2 {
+  cursor: pointer;
+}
+
+.eye > #hide-1 {
+  display: none;
+  right: 0.569rem;
+  top: 0.781em;
+  position: absolute;
+  /* background-color: var(--cs-primar-); */
+}
+
+/* #hide-2 {
+  padding: 0.594rem;
+  position: absolute;
+  right: 1rem;
+  top: 1.5rem;
+} */
+
+.form-option .forgot {
+  margin-top: -1rem;
+}
+
+.login-text > .login-mssg {
+  margin-top: -0.5rem;
+  font-size: 0.875rem;
+}
+
+.login-form > .sbmt {
+  margin-top: -1.5rem;
+}
+
+.sbmt > .login-btn {
+  padding: 0.5rem;
+  border-radius: 0.313rem;
+  /* border: 0.094rem solid var(--cs-tertiary-bg-color); */
+  border: none;
+  background-color: var(--cs-primary-color);
+  transition: all 0.3s ease-out;
+}
+
+.sbmt > .login-btn:hover {
+  background-color: var(--cs-secondary-color);
+}
+
+.login-btn[value="Login"] {
+  font-size: 0.938rem;
+  font-weight: 600;
+  letter-spacing: 0.063rem;
+}
+
+.sbmt > .signup-btn {
+  border: 0.125rem solid var(--cs-secondary-color);
+  border-radius: 0.313rem;
+  padding: 0.438rem;
+  font-size: 0.938rem;
+  font-weight: 600;
+  color: var(--cs-tertiary-bg-color);
+  transition: all 0.3s ease-out;
+}
+
+.sbmt > .signup-btn:hover {
+  background-color: var(--cs-secondary-color);
+}
